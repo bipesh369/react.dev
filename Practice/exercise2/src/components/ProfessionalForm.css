@@ -1,0 +1,96 @@
+/* Centering the form on the page */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Modern soft gray */
+  padding: 20px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* The Professional Form Card */
+.login-form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Soft, professional shadow */
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #1e293b; /* Dark slate */
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.login-form p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+/* Spacing out the input groups */
+.input-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+/* Modern Input Styling */
+.input-group input {
+  padding: 12px 16px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1e293b;
+  transition: all 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Focus State: The professional way to show active input */
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6; /* Modern Blue */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Provides a "pressed" feel when clicked */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 24px;
+  }
+}
